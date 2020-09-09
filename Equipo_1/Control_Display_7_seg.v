@@ -1,6 +1,4 @@
 module Control_Display_7_seg
-    #(parameter n=19,
-    parameter lim=4999999)
     (   input i_Clk,
         input i_Rst,
         input [3:0] i_Datos1,
