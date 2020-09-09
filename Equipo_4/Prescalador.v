@@ -10,17 +10,17 @@ always@(posedge i_clock)
 begin
 
 if (i_reset)
-contador <= 0;
+   contador <= 0;
 else
-contador <= contador+1;
+   contador <= contador+1;
 
 if (contador <= 416666)
-salida <= 0;
+   salida <= 0;
 else
-salida <= 1;
+   salida <= 1;
 
 if (contador == 833333)
-contador <= 0;
+   contador <= 0;
 
 end
 assign o_presc = salida;
