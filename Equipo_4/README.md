@@ -1,18 +1,18 @@
-Equipo 4 Patriarcado Team
+#  Equipo 4 Patriarcado Team
 
-Juan Uriel Castro Perez 
-
-José Humberto Hernández Pérez
-
-Ulises Ruíz Carrillo
-
-Enrique Salazar Ortega
-
-Jesus Martinez Quiroz
+<ul>
+<li> Juan Uriel Castro Pérez </li>
+<li>Jose Humberto Hernández Pérez</li>
+<li>Ulises Ruíz Carrillo</li>
+<li>Enrique Salazar Ortega</li>
+<li>Jesus Martinez Quiroz</li>
+</ul>
 
 
-Práctica 1 Preescalador
+## Práctica 1 Preescalador
 
 ###Actividades
 
-Subir el código del preescalador
+<ol>
+  <li> Subir el código del preescalador</li>
+</ol>
