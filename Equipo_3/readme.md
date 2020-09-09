@@ -10,5 +10,7 @@ Ricardo Heredia Davila
 
 ###########################
 
+Practica 1 .- Decodificador binario
+
 
 
