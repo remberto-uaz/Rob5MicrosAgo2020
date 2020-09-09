@@ -6,7 +6,7 @@ module demx
 	input [1:0] i_Sel,
         output [3:0] o_Salida);
 		
-	always@(i_Sel) begin
+always@(i_Sel) begin
 		case (i_Sel)
 			2'b00: o_Salida <= i_Datos_0;
 			2'b01: o_Salida <= i_Datos_1;
