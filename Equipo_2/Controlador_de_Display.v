@@ -1,8 +1,16 @@
-module Controlador_De_Display(
+módulo  Control_Display_7_seg
+    (    entrada i_Clk,
+        entrada i_Rst,
+        entrada [ 3 : 0 ] i_Datos1,
+        entrada [ 3 : 0 ] i_Datos2,
+        entrada [ 3 : 0 ] i_Datos3,
+        entrada [ 3 : 0 ] i_Datos4,
+        salida [ 3 : 0 ] o_Anodo;
+        salida [ 6 : 0 ] o_Segmentos);
     
-    String [3:0] Demx_Deco_Sel;
-    String [1:0] Contador_Demx_Sel;
-    String Prescalador_contador_tiempo;
+    alambre [ 3 : 0 ] Demx_Deco_Sel;
+    alambre [ 1 : 0 ] Contador_Demx_Sel;
+    alambre Prescalador_contador_tiempo ;;
 
     Contador_de_anillo  Bloque_1 (
         .i_Clk (i_Clk),
@@ -31,5 +39,4 @@ module Controlador_De_Display(
         .o_Salida (Demx_Deco_Sel)
     );
 
-    );
 endmodule
