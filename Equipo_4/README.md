@@ -1,4 +1,4 @@
-Equipo 1 Legión H
+Equipo 4 Patriarcado Team
 Juan Uriel Castro Perez 
 José Humberto Hernández Pérez
 Ulises Ruíz Carrillo
