@@ -4,7 +4,7 @@ module demx
         input [3:0] i_Datos_2,
 	input [3:0] i_Datos_3,
 	input [1:0] i_Sel,
-        output [3:0] o_Salida);
+        output reg [3:0] o_Salida);
 		
 always@(i_Sel) begin
 		case (i_Sel)
