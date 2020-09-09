@@ -2,8 +2,8 @@ module demx
     (   input [3:0] i_Datos_0,
         input [3:0] i_Datos_1,
         input [3:0] i_Datos_2,
-		input [3:0] i_Datos_3,
-		input [1:0] i_Sel,
+	input [3:0] i_Datos_3,
+	input [1:0] i_Sel,
         output [3:0] o_Salida);
 		
 	always@(i_Sel) begin
