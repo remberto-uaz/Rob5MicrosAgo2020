@@ -1,8 +1,8 @@
 #  Equipo 4 Patriarcado Team
 
 <ul>
-<li> Juan Uriel Castro Pérez </li>
-<li>Jose Humberto Hernández Pérez</li>
+<li> Juan Uriel Castro Perez </li>
+<li>José Humberto Hernández Pérez</li>
 <li>Ulises Ruíz Carrillo</li>
 <li>Enrique Salazar Ortega</li>
 <li>Jesus Martinez Quiroz</li>
