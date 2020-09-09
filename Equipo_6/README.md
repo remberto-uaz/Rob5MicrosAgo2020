@@ -9,9 +9,9 @@
 
 
 ## Práctica 1 Controlador de Display
-
+ 
 ###Actividades
 
 <ol>
-  <li> Subir el código del controlador de multiplexor</li>
+  <li> Subir el código del controlador de multiplexor.</li>
 </ol>
