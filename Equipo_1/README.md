@@ -13,5 +13,5 @@
 ###Actividades
 
 <ol>
-  <li> Subir el código del controladpr de display</li>
+  <li> Subir el código del controlador de display</li>
 </ol>
