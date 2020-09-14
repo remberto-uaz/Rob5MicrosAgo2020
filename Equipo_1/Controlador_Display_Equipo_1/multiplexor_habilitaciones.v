@@ -6,6 +6,10 @@ module multiplexor_habilitaciones
         input [3:0] i_Datos4,
         output [3:0] o_Cifra,
         output [3:0] o_Habs);
+
+    reg [3:0] o_Cifra;
+    reg [3:0] o_Habs 
+      
     @always(i_Ncifra,i_Datos)begin
         case (i_N_cifra) 
             2'b00: begin

@@ -5,7 +5,7 @@ module contador_inc_nb
         input i_Inc,
         output [n-1:0] o_Cta);
     
-    wire [n-1:0] cata_i;
+    reg [n-1:0] cta_i;
 
     
     always@(negedge i_Rst, posedge i_Clk) begin
