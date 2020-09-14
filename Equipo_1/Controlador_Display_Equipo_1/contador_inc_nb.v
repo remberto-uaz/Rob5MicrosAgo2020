@@ -1,5 +1,5 @@
 module contador_inc_nb
-    #(parameter n=0)
+    #(parameter n=8)
     (   input i_Clk,
         input i_Rst,
         input i_Inc,

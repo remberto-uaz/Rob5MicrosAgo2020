@@ -8,22 +8,22 @@ module multiplexor_habilitaciones
         output [3:0] o_Habs);
     @always(i_Ncifra,i_Datos)begin
         case (i_N_cifra) 
-            0: begin
-                o_Habs<=14;
+            2'b00: begin
+                o_Habs<=4'b1110;
                 o_Cifra<=i_Datos1;
                 end
-            1: begin
-                o_Habs<=13;
+            2'b01: begin
+                o_Habs<=4'b1101;
                 o_Cifra<=i_Datos2;
                 end
-            2: begin
-                o_Habs<=11;
+            2'b10: begin
+                o_Habs<=4'b1011;
                 o_Cifra<=i_Datos3;
                 end
             default: begin
-                o_Habs<=10;
+                o_Habs<=4'b0111;
                 o_Cifra<=i_Datos4;
-                 end
+                end
         endcase
     end
 endmodule
