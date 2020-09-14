@@ -6,6 +6,7 @@ module preescalador
         output o_H);
     
     reg [n-1:0] cta_i;
+    reg o_H;
 
     always@(negedge i_Rst, posedge i_Clk) begin
         if (!Rst_n) begin
