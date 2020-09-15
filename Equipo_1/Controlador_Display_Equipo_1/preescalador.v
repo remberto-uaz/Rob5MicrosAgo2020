@@ -1,24 +1,22 @@
-module preescalador
-    #(parameter n=4,
-    parameter lim=100000)
+module contador_inc_nb
+    #(parameter n=8)
     (   input i_Clk,
-        input i_Reset,
-        output o_H);
+        input i_Rst,
+        input i_Inc,
+        output [n-1:0] o_Cta);
     
     reg [n-1:0] cta_i;
-    reg o_H;
 
+    
     always@(negedge i_Rst, posedge i_Clk) begin
-        if (!Rst_n) begin
+        if (!Rst) begin
             cta_i<=0;
         end else begin
-            o_H<=0;
-            cta_i=cta_i+1;
-            if (cta_i==lim) begin
-                o_H<=1;
-                cta_i<=0;
+            if (i_Inc==1) begin
+                cta_i<=cta_i+1;
             end
         end
     end
-
+    assign 
+        o_Cta=cta_i;
 endmodule
