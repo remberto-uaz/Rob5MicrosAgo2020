@@ -13,7 +13,7 @@ module Control_Display_7_seg
     wire Prescalador_contador_tiempo;
 
     Contador_de_anillo Bloque_1(
-        .i_Clk(i_Clk),
+        .i_Clk(Prescalador_contador_tiempo),
         .i_Rst(i_Rst),
         .o_Anodo(o_Anodo),
         .o_Sel(Contador_Demx_Sel)
