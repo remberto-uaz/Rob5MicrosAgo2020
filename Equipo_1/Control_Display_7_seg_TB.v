@@ -1,4 +1,4 @@
-module Control_Display_7_seg_TB(
+module Controlador_Display_7_seg_TB(
 );
     reg clk,reset;
     reg [3:0] D0,D1,D2,D3;
