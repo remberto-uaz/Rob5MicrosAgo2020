@@ -1,8 +1,8 @@
 module Contador_de_anillo_TB(
 );
-    reg clk,
-    reg rst,
-    wire [3:0] anodo,
+    reg clk;
+    reg rst;
+    wire [3:0] anodo;
     wire [1:0] sel);
 
     Contador_de_anillo DUT (
@@ -14,8 +14,8 @@ module Contador_de_anillo_TB(
 
     initial begin
         clk<=0;
-        reset<=1;
-        #20 reset<=0;
+        rst<=1;
+        #20 rst<=0;
     end
 
     always@(clk) begin
