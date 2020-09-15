@@ -5,7 +5,7 @@ module Control_Display_7_seg
         input [3:0] i_Datos2,
         input [3:0] i_Datos3,
         input [3:0] i_Datos4,
-        output [3:0] o_Anodo;
+        output [3:0] o_Anodo,
         output [6:0] o_Segmentos);
     
     wire [3:0] Demx_Deco_Sel;
