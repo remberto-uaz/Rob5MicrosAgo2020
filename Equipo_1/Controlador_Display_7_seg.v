@@ -1,4 +1,4 @@
-module Control_Display_7_seg
+module Controlador_Display_7_seg
     (   input i_Clk,
         input i_Rst,
         input [3:0] i_Datos1,
