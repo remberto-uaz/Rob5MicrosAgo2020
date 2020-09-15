@@ -24,7 +24,7 @@ module Control_Display_7_seg_TB(
         D1<=7;
         D2<=5;
         D3<=1;
-        #20 reset<=0
+        #20 reset<=0;
     end
 
     always@(clk) begin
