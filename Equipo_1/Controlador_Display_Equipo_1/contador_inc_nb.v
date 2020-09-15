@@ -9,14 +9,14 @@ module contador_inc_nb
 
     
     always@(negedge i_Rst, posedge i_Clk) begin
-        if (!rst_n) begin
+        if (!Rst) begin
             cta_i<=0;
         end else begin
-            if (inc==1) begin
+            if (i_Inc==1) begin
                 cta_i<=cta_i+1;
             end
         end
     end
     assign 
-        cta=cta_i;
+        o_Cta=cta_i;
 endmodule
