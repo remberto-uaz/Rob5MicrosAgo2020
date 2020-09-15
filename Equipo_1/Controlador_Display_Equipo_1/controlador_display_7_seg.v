@@ -24,12 +24,11 @@ module controlador_display_7_seg
     preescalador Bloque_2(17,99999)(
         .i_Clk(i_Clk),
         .i_Rst(i_Rst),
-        .i_Hab_pre(h),
-        .o_H(hab),
+        .o_H(h),
     );
 
     decodificador_binario_7seg Bolque_3(
-        .i_Entrada(cifra),
+        .i_Entrada(o_Cifra),
         .o_Salida(o_S7seg)
     );
 
