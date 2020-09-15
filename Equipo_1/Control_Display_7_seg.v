@@ -31,12 +31,12 @@ module Control_Display_7_seg
     );
 
     Demx Bloque_4(
-        .i_Sel(Contador_Demx_Sel),
+        .i_Sel(i_Contador_Demx_Sel),
         .i_Datos1(i_Datos1),
         .i_Datos2(i_Datos2),
         .i_Datos3(i_Datos3),
         .i_Datos4(i_Datos4),
-        .o_Salida(Demx_Deco_Sel)
+        .o_Salida(o_Demx_Deco_Sel)
     );
 
 endmodule
