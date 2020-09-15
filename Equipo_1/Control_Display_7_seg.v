@@ -25,7 +25,7 @@ module Control_Display_7_seg
         .o_Presc(Prescalador_contador_tiempo)
     );
 
-    Deco_binario_7seg Bolque_3(
+    Deco_binario_7seg Bloque_3(
         .i_Bits(Demx_Deco_Sel),
         .o_Segmentos(o_Segmentos)
     );
