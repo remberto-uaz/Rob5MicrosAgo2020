@@ -1,4 +1,4 @@
-module demx
+module Multiplexor
     (   input [3:0] i_Datos_0,
         input [3:0] i_Datos_1,
         input [3:0] i_Datos_2,
