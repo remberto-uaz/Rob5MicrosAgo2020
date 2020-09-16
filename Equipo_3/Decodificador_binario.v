@@ -16,11 +16,11 @@ always@(i_bits)
       4'b1000: o_segmentos = 7'b0000000;
       4'b1001: o_segmentos = 7'b0001100;
       4'b1010: o_segmentos = 7'b0001000;
-      4'b1011: o_segmentos = 7'b0000011;
-      4'b1100: o_segmentos = 7'b1000110;
-      4'b1101: o_segmentos = 7'b0100001;
-      4'b1110: o_segmentos = 7'b0000110;
-      4'b1111: o_segmentos = 7'b0001110;
+      4'b1011: o_segmentos = 7'b1100000;
+      4'b1100: o_segmentos = 7'b0110001;
+      4'b1101: o_segmentos = 7'b1000010;
+      4'b1110: o_segmentos = 7'b0110000;
+      4'b1111: o_segmentos = 7'b0111000;
       default: o_segmentos = 7'b1111111;
     endcase
   end
