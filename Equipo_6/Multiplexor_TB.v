@@ -18,7 +18,7 @@ module Multiplexor_TB(
      .i_Datos_2(Datos_2),
      .i_Datos_3(Datos_3),
      .i_Sel(Sel),
-     .Exit(Salida)
+     .o_Salida(Salida)
  );
  
  initial
