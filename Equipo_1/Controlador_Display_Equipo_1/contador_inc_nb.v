@@ -9,7 +9,7 @@ module contador_inc_nb
 
     
     always@(negedge i_Rst, posedge i_Clk) begin
-        if (!Rst) begin
+        if (!i_Rst) begin
             cta_i<=0;
         end else begin
             if (i_Inc==1) begin
