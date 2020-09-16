@@ -6,7 +6,7 @@ module Contador_de_anillo(
 
     reg [1:0] cont;
 
-    always @(posedge i_Rst, posedge i_Clk)
+
     begin
         if(i_Rst) begin
             o_Anodo<= 4'b0001;
