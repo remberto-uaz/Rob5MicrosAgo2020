@@ -14,4 +14,11 @@ initial begin
     #20;
     bits<=4'b0010;
     #20;
+     bits<=4'b0100;
+    #20;
+     bits<=4'b1000;
+    #20;
+end
+endmodule
+    
     
