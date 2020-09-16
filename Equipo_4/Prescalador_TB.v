@@ -1,4 +1,4 @@
-module Prescalador_TB(
+module Preescalador_TB(
 
 );
 
@@ -6,10 +6,10 @@ reg clk;
 reg reset;
 wire clk_out;
 
-Prescalador DUT (
-  .i_clock(clk),
-  .i_reset(reset),
-  .o_presc(clk_out)
+Preescalador DUT (
+  .i_Clk(clk),
+  .i_Rst(reset),
+  .o_Presc(clk_out)
 );
 
 initial
