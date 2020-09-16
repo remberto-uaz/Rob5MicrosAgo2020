@@ -22,6 +22,6 @@ always@(i_bits)
       4'b1110: o_segmentos = 7'b0000110;
       4'b1111: o_segmentos = 7'b0001110;
       default: o_segmentos = 7'b1111111;
-    end case;
-  end;
-endmodule;
+    endcase
+  end
+endmodule
