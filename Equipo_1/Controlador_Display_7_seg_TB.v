@@ -5,13 +5,13 @@ module Controlador_Display_7_seg_TB(
     wire [3:0] AN;
     wire [6:0] Seg;
 
-    Controlador_Display_7_seg DUT(
+    Control_Display_7_seg DUT(
         .i_Clk(clk),
         .i_Rst(reset),
-        .i_Datos1(D0),
-        .i_Datos2(D1),
-        .i_Datos3(D2),
-        .i_Datos4(D3),
+        .i_Datos_1(D0),
+        .i_Datos_2(D1),
+        .i_Datos_3(D2),
+        .i_Datos_4(D3),
         .o_Anodo(AN),
         .o_Segmentos(Seg)
     );
