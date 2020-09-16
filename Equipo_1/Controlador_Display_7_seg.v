@@ -1,10 +1,10 @@
 module Controlador_Display_7_seg
     (   input i_Clk,
         input i_Rst,
-        input [3:0] i_Datos1,
-        input [3:0] i_Datos2,
-        input [3:0] i_Datos3,
-        input [3:0] i_Datos4,
+        input [3:0] i_Datos_1,
+        input [3:0] i_Datos_2,
+        input [3:0] i_Datos_3,
+        input [3:0] i_Datos_4,
         output [3:0] o_Anodo,
         output [6:0] o_Segmentos);
     
@@ -32,10 +32,10 @@ module Controlador_Display_7_seg
 
     Demx Bloque_4(
         .i_Sel(Contador_Demx_Sel),
-        .i_Datos1(i_Datos1),
-        .i_Datos2(i_Datos2),
-        .i_Datos3(i_Datos3),
-        .i_Datos4(i_Datos4),
+        .i_Datos_0(i_Datos_1),
+        .i_Datos_1(i_Datos_2),
+        .i_Datos_2(i_Datos_3),
+        .i_Datos_3(i_Datos_4),
         .o_Salida(Demx_Deco_Sel)
     );
 
