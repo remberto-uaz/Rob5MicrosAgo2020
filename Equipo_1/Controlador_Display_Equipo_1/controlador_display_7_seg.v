@@ -7,7 +7,7 @@ module controlador_display_7_seg
         input [3:0] i_Datos2,
         input [3:0] i_Datos3,
         input [3:0] i_Datos4,
-        output [3:0] o_Habs;
+        output [3:0] o_Habs,
         output [6:0] o_S7seg);
     
     wire [3:0] cifra;
