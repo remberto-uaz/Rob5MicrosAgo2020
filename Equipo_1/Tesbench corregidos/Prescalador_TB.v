@@ -1,10 +1,10 @@
-module Prescalador_TB(
+module Preescalador_TB(
 );
     reg clk;
     reg reset;
     wire clk_out;
 
-    Prescalador DUT (
+    Preescalador DUT (
         .i_Clk(clk),
         .i_Rst(reset),
         .o_Presc(clk_out)
