@@ -6,7 +6,7 @@ always@(i_bits)
   begin
     case(i_bits)
       4'b0000: o_segmentos = 7'b0000001;
-      4'b0001: o_segmentos = 7'b1001111:
+      4'b0001: o_segmentos = 7'b1001111;
       4'b0010: o_segmentos = 7'b0010010;
       4'b0011: o_segmentos = 7'b0000110;
       4'b0100: o_segmentos = 7'b1001100;
