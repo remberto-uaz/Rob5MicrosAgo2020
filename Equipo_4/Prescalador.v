@@ -1,4 +1,4 @@
-module Prescalador(
+module Preescalador(
   input i_clock,
   input i_reset,
   output o_presc
