@@ -12,7 +12,7 @@ module Contador_de_anillo(
             o_Anodo<= 4'b0001;
             o_Sel<=2'b00;   
             cont<=2'b00;
-        end 
+        
         else begin
             case(cont)
                 2'b00: begin
