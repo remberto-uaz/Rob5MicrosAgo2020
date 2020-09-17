@@ -5,7 +5,6 @@ module ring_counter(
     o_Anodo
     );
 
-    //what are the input ports and their sizes.
     input i_clock;
     input i_reset;
     //what are the output ports and their sizes.
