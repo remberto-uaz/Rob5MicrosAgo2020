@@ -35,4 +35,8 @@ module Contador_de_anillo(
                     o_Sel<=cont;  
                     cont<=2'b00; 
                 end
-         
+            endcase    
+        end 
+    end
+
+endmodule
