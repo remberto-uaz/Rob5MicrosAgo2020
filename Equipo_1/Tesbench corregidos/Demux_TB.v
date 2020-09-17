@@ -22,14 +22,16 @@
         datos_2<=4'b1100;
         datos_3<=4'b1111;
         sel<=2'b00;
-        #50
+
+    end
+    
+    always@(sel) begin
         sel <= 2'b00;
-        #50 
+        #5
         sel <= 2'b01;
-        #50 
+        #5 
         sel <= 2'b10;
-        #50 
+        #5
         sel <= 2'b11;
     end
-
 endmodule
