@@ -1,5 +1,4 @@
 module Deco_binario_7seg_TB(
-
 );
     reg [3:0] bits;
     wire [6:0] segmentos;
@@ -40,7 +39,5 @@ initial begin
     #20;
     bits<=4'b1111;
     #20;
-end
+    end
 endmodule
-    
-    
