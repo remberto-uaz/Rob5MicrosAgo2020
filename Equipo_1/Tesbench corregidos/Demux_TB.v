@@ -26,6 +26,7 @@
     end
     
     always@(sel) begin
+        #5
         sel <= 2'b00;
         #5
         sel <= 2'b01;
