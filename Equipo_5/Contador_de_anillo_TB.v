@@ -15,7 +15,7 @@ module Contador_de_anillo_TB(
     initial begin
         clk<=0;
         rst<=1;
-        #20 rst<=0;
+        #10 rst<=0;
     end
 
     always@(clk) begin
