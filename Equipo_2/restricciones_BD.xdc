@@ -2,13 +2,13 @@
 
 	## Para usarlo en un proyecto:
 
-	## - descomenta las lÌneas correspondientes a los pines usados
+	## - descomenta las l√≠neas correspondientes a los pines usados
 
-	## - cambie el nombre de los puertos usados (en cada lÌnea, despuÈs de get_ports) de acuerdo con los nombres de las seÒales de nivel superior en el proyecto
+	## - cambie el nombre de los puertos usados (en cada l√≠nea, despu√©s de get_ports) de acuerdo con los nombres de las se√±ales de nivel superior en el proyecto
 
 	
 
-	## SeÒal de reloj
+	## Se√±al de reloj
 
 	set_property PACKAGE_PIN W5 [get_ports i_Clk]							
 
@@ -196,21 +196,21 @@
 
 	
 
-	set_property PACKAGE_PIN U2 [get_ports {o_Anodos [0]}]
+	set_property PACKAGE_PIN U2 [get_ports {o_Anodo [0]}]
 
-	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodos [0]}]
+	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodo [0]}]
 
-	set_property PACKAGE_PIN U4 [get_ports {o_Anodos [1]}]
+	set_property PACKAGE_PIN U4 [get_ports {o_Anodo [1]}]
 
-	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodos [1]}]
+	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodo [1]}]
 
-	set_property PACKAGE_PIN V4 [get_ports {o_Anodos [2]}]
+	set_property PACKAGE_PIN V4 [get_ports {o_Anodo [2]}]
 
-	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodos [2]}]
+	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodo [2]}]
 
-	set_property PACKAGE_PIN W4 [get_ports {o_Anodos [3]}]
+	set_property PACKAGE_PIN W4 [get_ports {o_Anodo [3]}]
 
-	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodos [3]}]
+	    set_property IOSTANDARD LVCMOS33 [get_ports {o_Anodo [3]}]
 
 	
 
@@ -558,9 +558,9 @@
 
 	
 
-	## Flash cu·druple SPI
+	## Flash cu√°druple SPI
 
-	## Tenga en cuenta que CCLK_0 no se puede colocar en dispositivos de la serie 7. Puede acceder a Èl utilizando el
+	## Tenga en cuenta que CCLK_0 no se puede colocar en dispositivos de la serie 7. Puede acceder a √©l utilizando el
 
 	## Primitiva STARTUPE2.
 
