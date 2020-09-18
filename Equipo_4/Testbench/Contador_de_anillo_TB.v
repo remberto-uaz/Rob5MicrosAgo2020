@@ -19,6 +19,6 @@ module Contador_de_anillo_TB(
     end
     always@(clk) 
 	begin
-		#5 clk <= ~clk;
+		#4166667 clk <= ~clk;
     end
 endmodule
