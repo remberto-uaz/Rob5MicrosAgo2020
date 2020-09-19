@@ -1,0 +1,34 @@
+module Contador_de_anillo(               //Nombre del modulo 
+    input i_Clk,                         //Entrada del reloj
+    input i_Rst,                         //Entrada del reset
+    output reg [3:0] o_Anodos,           //Salida de 4 bits llamado o_Anodos
+    output reg [1:0] o_Sel);             //Salida de 2 bits llamada o_Sel
+ always @(posedge i_Rst, posedge i_Clk)  //Funcion que se ejecuta en forma de bucle, hace que el código espere el rise del clock y también el reset para ejecutar el código 
+    begin                                //Se engloba el proceso en un bloque
+        if(i_Rst) begin                  //Condicional que revisa si se presiono el reset
+            o_Anodos<= 4'b0001;          //Inicializa los ánodos en 0001
+            o_Sel<=2'b00;                //Inicializa la selección en 00
+        end                              //Finaliza el condicional
+        else begin                       //Condicional que engloba un bloque
+            case(o_Sel)                  //Case que toma el valor que está en o_Sel
+                2'b00: begin             //Cuando s_Sel se encuentra en 00 inicia el siguiente bloque de códigos
+                    o_Anodos<= 4'b0001;  //Se asigna el valor a o_Anodos 0001
+                    o_Sel<=o_Sel+1;      //Se suma un 1 al valor de o_Sel
+                end                      //Termina el bloque de código
+               2'b01: begin              //Inicia el bloque de código cuando o_Sel tiene el valor 01
+                    o_Anodos<= 4'b0010;  //Se asigna el valor a o_Anodos 0010
+                    o_Sel<=o_Sel+1;      //Se suma un 1 al valor de o_Sel
+                end                      //Termina el bloque de código
+                2'b10: begin             //Se ejecuta el siguiente bloque de código cuando o_Sel tiene los valores 10
+                    o_Anodos<= 4'b0100; 	//Se asigna el valor a o_Anodos 0100
+                    o_Sel<=o_Sel+1;      //Se suma un 1 al valor de o_Sel
+                end                      //Termina el bloque de código
+                default: begin           //El siguiente bloque de código se ejecuta cuando no hay otro case disponible
+                    o_Anodos<= 4'b1000;  //Se asigna el valor a o_Anodos 1000
+                    o_Sel<=2'b00;        //Se le asigna a o_Sel un valor de 00
+                end                      //Termina el bloque de código
+            endcase                      //Termina el código dentro del condicional
+        end                              //Termina el bloque de código
+    end                                  //Termina el bloque de código
+
+endmodule                                //Acaba el modulo
