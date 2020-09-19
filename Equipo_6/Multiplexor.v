@@ -6,7 +6,7 @@ module Multiplexor
 	input [1:0] i_Sel,
         output reg [3:0] o_Salida);
 		
-always@(i_Sel) begin
+always@(i_Sel,i_Datos_0,i_Datos_1,i_Datos_2,i_Datos_3) begin
 		case (i_Sel)
 			2'b00: o_Salida <= i_Datos_0;
 			2'b01: o_Salida <= i_Datos_1;
