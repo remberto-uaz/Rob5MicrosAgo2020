@@ -21,7 +21,7 @@ module Contador_de_anillo(
         else begin
             case(cont)
                 2'b00: begin
-                    o_Anodo<= 4'b0001;//Se codifica en otro formato para
+                    o_Anodo<= 4'b1110;//Se codifica en otro formato para
                                       //o_Anodo, en este caso, de un bit
                                       //a la vez 
                     o_Sel<=cont;//Con cada iteracion el contador pasa su 
@@ -29,17 +29,17 @@ module Contador_de_anillo(
                     cont<=cont+1;
                 end
                 2'b01: begin
-                    o_Anodo<= 4'b0010;
+                    o_Anodo<= 4'b1101;
                     o_Sel<=cont;  
                     cont<=cont+1;
                 end  
                 2'b10: begin
-                    o_Anodo<= 4'b0100;
+                    o_Anodo<= 4'b1011;
                     o_Sel<=cont;  
                     cont<=cont+1;
                 end
                 default: begin 
-                    o_Anodo<= 4'b1000;
+                    o_Anodo<= 4'b0111;
                     o_Sel<=cont;  
                     cont<=2'b00;//Llega al limite, por lo que retorna
                                 //a cero
