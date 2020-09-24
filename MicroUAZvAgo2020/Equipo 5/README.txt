@@ -1,7 +1,10 @@
-Equipo 5 Los Panas
+#  Equipo 5 Los Panas
 
-Allan Uriel Valencia Esparza
-Karla Lorena Loera Benitez
-Jonathan Adrian Garcia Guerrero
+<ul>
+<li> Allan Uriel Valencia Esparza </li>
+<li>Karla Lorena Loera Benitez</li>
+<li>Jonathan Adrian Garcia Guerrero</li>
+
+</ul>
 
 Diseño de un microprocesador con arquitectura Harvard y set de instrucciones RISC
