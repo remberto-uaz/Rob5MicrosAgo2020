@@ -1,7 +1,7 @@
 #  Equipo 5 Los Panas
 
 <ul>
-<li> Allan Uriel Valencia Esparzao </li>
+<li> Allan Uriel Valencia Esparza </li>
 <li>Karla Lorena Loera Benitez</li>
 <li>Jonathan Adrian Garcia Guerrero</li>
 
