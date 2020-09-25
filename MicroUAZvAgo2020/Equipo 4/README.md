@@ -9,10 +9,10 @@
 </ul>
 
 
-## Práctica 1 Preescalador
+## Práctica 2 Microcontrolador
 
 ###Actividades
 
 <ol>
-  <li> Subir el código del preescalador</li>
+  <li> Arquitectura Microcontrolador</li>
 </ol>
