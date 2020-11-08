@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: UAZg
+// Company: UAZ
 // Engineer: Juan Bernardo Esparza Luevano
 // 
 // Create Date: 03.11.2020 13:48:33
