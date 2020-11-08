@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: UAZ
+// Engineer: Juan Bernardo Esparza Luevano
 // 
 // Create Date: 03.11.2020 17:59:44
 // Design Name: 
 // Module Name: Registros
-// Project Name: 
+// Project Name: Microprosesador
 // Target Devices: 
 // Tool Versions: 
 // Description: 
