@@ -1,24 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 06.11.2020 17:50:28
-// Design Name: 
-// Module Name: MuxR_In
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
 
 module MuxR_In(
     input [2:0] RY,
@@ -30,10 +10,10 @@ module MuxR_In(
     
     always@* begin
         case(SELEC)
-            3'b001: DATO<={5'b0,RY};
-            3'b010: DATO<=RY_DATO;
-            3'b011: DATO<=DATO_IN;
-            default: DATO<=0;
+            3'b001: DATO <= {5'b00000,RY};
+            3'b010: DATO <= RY_DATO;
+            3'b011: DATO <= DATO_IN;
+            default: DATO <= 8'b00000000;
         endcase
     end
     
