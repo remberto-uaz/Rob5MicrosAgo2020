@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module Salidas(
     input [2:0] SELEC,
     input [7:0] RX_DATO,
@@ -6,21 +8,30 @@ module Salidas(
     output reg [7:0] DATO_OUT,
     output reg [7:0] DIR_OUT
     );
-  reg [2:0] c;
-    always@ (SELEC)
+
+always@*
     begin
-    if(SELEC==3'b101)
-    begin
-    DIR_OUT<=DATO_OUT;
-    c<=DATO_OUT[2:0];
-    c<=RY;
-    end
-    else if(SELEC==3'b110)
-    begin
-    DATO_OUT<=RY_DATO;
-    DIR_OUT<=RX_DATO;
-    
- end   
-  
- end   
+        case(SELEC)
+        3'b011:
+            begin
+                DIR_OUT <= RY_DATO;
+                DATO_OUT <= 8'b00000000;
+            end
+        3'b101:
+            begin
+                DIR_OUT <= RX_DATO;
+                DATO_OUT <= {5'b00000, RY};
+            end
+        3'b110:
+                begin
+                    DIR_OUT <= RX_DATO;
+                    DATO_OUT <= RY_DATO;
+                end
+        default:
+            begin
+                DIR_OUT <= 8'b00000000;
+                DATO_OUT <= 8'b00000000;
+            end
+        endcase
+    end   
 endmodule
