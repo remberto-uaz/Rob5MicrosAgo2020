@@ -7,11 +7,11 @@ module ALU(
     output reg [2:0] FLAG_IN,
     output [7:0] RESUL
     );
-reg [8:0] VALOR;
-wire BIT;
+
+reg [15:0] VALOR;
+
 assign RESUL = VALOR[7:0];
-assign BIT = VALOR[8];
-    always@(RX_DATO, R0_DATO, RY)
+    always@*
         begin
             case(RY)
                 3'b000: VALOR <= R0_DATO + RX_DATO;
@@ -24,11 +24,14 @@ assign BIT = VALOR[8];
                 3'b111: VALOR <= R0_DATO ^ RX_DATO;
                 default: VALOR<= 8'b00000000;
             endcase
-            if (BIT ==1)
-                FLAG_IN <= FLAG_IN | 010;
-            if (RESUL == 00000000)
-                FLAG_IN <= FLAG_IN | 100;
-            if (RESUL < 00000000)
-                FLAG_IN <= FLAG_IN | 001;
+            if (VALOR[8] == 1) //CARRY
+                FLAG_IN[1] <= 1;
+            else FLAG_IN[1] <= 0;
+            if (VALOR == 9'b000000000)   //ZERO
+                FLAG_IN[2] <= 1;
+            else FLAG_IN[2] <= 0;
+            if (VALOR[7] == 1'b1)       //SIGN
+                FLAG_IN[0] <= 1;
+            else FLAG_IN[0] <= 0;
         end
 endmodule
