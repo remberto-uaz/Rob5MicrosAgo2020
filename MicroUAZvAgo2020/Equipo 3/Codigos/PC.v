@@ -1,38 +1,24 @@
+`timescale 1ns / 1ps
+
 module PC(
     input clk,
-    input rst,
+    input reset,
     input DONE,
     input [7:0] RX_DATO,
-    input [1:0] HAB,
+    input [2:0] HAB,
     output reg[7:0] PC_VAL
     );
+
 always@(posedge clk)
-begin
-	if(rst==1'b1)
-	begin
-	PC_VAL<=8'b00000000;
-    end
-	else  begin 
-   if(HAB==2'b10 || HAB==2'b11)
-   begin 
-   PC_VAL<=RX_DATO;
-   if(DONE==1'b1)
-   begin
-   PC_VAL=PC_VAL+1;
-   end
-   else begin
-   PC_VAL=PC_VAL;
-   end
-   end
-   else begin
-   if(DONE==1'b1)
-   begin
-   PC_VAL=PC_VAL+1;
-   end
-   else begin
-   PC_VAL=PC_VAL;
-   end
-   end
-   end
- end
+    begin
+        if(reset == 1'b1)
+                PC_VAL <= 8'b00000000;
+        else  
+           case(HAB)
+                3'b010: PC_VAL<=RX_DATO;
+                3'b011: PC_VAL<=RX_DATO;
+            endcase
+           if(DONE == 1'b1)
+                PC_VAL=PC_VAL+1;
+           end
 endmodule
