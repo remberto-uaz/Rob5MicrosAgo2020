@@ -14,7 +14,7 @@ module Control(
         case(Inst)
             3'b001:
                 begin
-                    RW <= 1'bz;
+                    RW <= 1'b0;
                     SELEC <= 001;
                     DONE <= 1;
                     HAB <= 100;
@@ -42,14 +42,14 @@ module Control(
                 end
             3'b101:
                 begin
-                    RW <= 1'bz;
+                    RW <= 1'b0;
                     SELEC <= 010;
                     DONE <= 1;
                     HAB <= 100;
                 end
             3'b110:
                 begin
-                    RW <= 1'bz;
+                    RW <= 1'b0;
                     SELEC <= 000;
                     DONE <= 1;
                     HAB <= 001;
@@ -59,30 +59,30 @@ module Control(
                     case(COND)
                         2'b01:
                         begin
-                            RW <= 1'bz;
+                            RW <= 1'b0;
                             SELEC <= 000;
                             DONE <= 1;
                             HAB <= 010;
                         end
                         2'b11:
                         begin
-                            RW <= 1'bz;
+                            RW <= 1'b0;
                             SELEC <= 000;
                             DONE <= 1;
                             HAB <= 011;
                         end
                         default:
                         begin
-                            RW <= 1'bz;
+                            RW <= 1'b0;
                             SELEC <= 000;
-                            DONE <= 0;
+                            DONE <= 1;
                             HAB <= 000;
                         end
                     endcase
                 end
             default:
                 begin
-                    RW <= 1'bz;
+                    RW <= 1'b0;
                     SELEC <= 3'b000;
                     DONE <= 1'b0;
                     HAB <= 3'b000;
