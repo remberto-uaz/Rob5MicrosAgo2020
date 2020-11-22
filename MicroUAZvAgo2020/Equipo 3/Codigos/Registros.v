@@ -15,9 +15,8 @@ module Registros(
     );
     
     reg [7:0] R[0:7];
-    reg [7:0] resul;
     
-    assign R0_DATO = resul;
+    assign R0_DATO = R[0];
     assign RX_DATO = R[RX];
     assign RY_DATO = R[RY];
 
@@ -42,7 +41,6 @@ module Registros(
                         3'b100: R[RX] <= DATO;
                         default:
                             begin
-                                resul <= R[0];
                                 R[0] <= R[0];
                                 R[1] <= R[1];
                                 R[2] <= R[2];
