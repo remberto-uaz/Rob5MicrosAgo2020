@@ -20,7 +20,7 @@ module Registros(
     assign RX_DATO = R[RX];
     assign RY_DATO = R[RY];
 
-    always@(posedge clk)
+    always@(posedge clk, posedge reset)
         begin
             if(reset == 1)
                 begin
