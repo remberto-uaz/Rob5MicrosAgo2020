@@ -32,7 +32,7 @@ module ROM(
  
  assign Instruccion = Instrucciones;
  
- always@(posedge Clk)
+    always@(negedge Clk)
  begin
     Instrucciones <= ROM[Direccion_Instrucciones];
  end
