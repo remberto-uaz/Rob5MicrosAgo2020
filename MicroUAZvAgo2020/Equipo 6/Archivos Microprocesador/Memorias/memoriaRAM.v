@@ -25,7 +25,7 @@ module memoriaRAM(
     input [7:0] Direccion_Dato,
     input [7:0] Entrada_Datos,
     input RW,
-    output reg [7:0] Datos_Salida
+    output [7:0] Datos_Salida
  );
     
     
@@ -39,9 +39,9 @@ module memoriaRAM(
     begin
       if(RW)
         RAM[Direccion_Dato] <= Entrada_Datos; // escritura
-      else
-        Datos_Salida <= RAM[Direccion_Dato];  //lectura
     end
+    
+    assign  Datos_Salida = (RW == 1'b0) ? RAM[Direccion_Dato]: Datos_Salida;  //lectura
     
     //Se inicializa la memoria RAM
     initial
