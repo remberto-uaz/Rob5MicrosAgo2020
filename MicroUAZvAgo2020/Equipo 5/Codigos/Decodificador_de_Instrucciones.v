@@ -657,14 +657,8 @@ end
 
 Move_i = 0;
 Write_i = 0;
-j_i = 0;
-k_i = 0;
-i_i = 0;
 Math_i = 0;
-Sel_out_i = 0;
-N_i = 0;
-Sel_PC_i = 0;
-f_i = 0;
+
 
 end
  
