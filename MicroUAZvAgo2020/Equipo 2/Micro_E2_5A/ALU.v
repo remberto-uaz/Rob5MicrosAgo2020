@@ -6,6 +6,7 @@ module ALU(
     output [2:0] oALU_flags,
     output [7:0] oALU_rd
     );
+    
     reg [7:0] Res=0;
     always@(*)
         begin
